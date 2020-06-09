@@ -25,7 +25,7 @@ def create_app(test_config=None):
     def create_plant():
         body = request.get_json()
         if body is None:
-            return(jsonify({'message': 'abort 422'}))
+            return 'error'
         else:
             new_name = body.get('name', None)
             new_primary_color = body.get('primary_color', None)
@@ -40,9 +40,10 @@ def create_app(test_config=None):
             channel.basic_publish(exchange='',
                       routing_key=QUEUE_NAME,
                       body=MESSAGE_BODY)
-            connection.close()
-
+            return new_name
+        
         except Exception as e:
+            connection.close()
             print(e)
 
     return app
