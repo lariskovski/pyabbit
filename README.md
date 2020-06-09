@@ -14,3 +14,9 @@ bin path: ``/opt/rabbitmq/sbin/rabbitmqctl``
 ### RabbitMQ
 
 ``docker run -d --hostname rabbit --name rabbit -p 5672:5672 rabbitmq:3``
+
+## Testing
+
+Sending a message to the plants queue
+
+``curl -X POST localhost:5000/api/plants -d '{"name":"rose", "primary_color": "red"}'``
