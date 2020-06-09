@@ -46,3 +46,5 @@ def create_app(test_config=None):
             print(e)
 
     return app
+
+create_app().run()
