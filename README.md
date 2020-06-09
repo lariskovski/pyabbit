@@ -1,0 +1,2 @@
+# pyabbit
+RabbitMQ + Python project
