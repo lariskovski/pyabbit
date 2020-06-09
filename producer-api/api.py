@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request
 import pika
 
 # RabbitMQ config
-RABBIT_ADDRESS=localhost
-QUEUE_NAME=plants
+RABBIT_ADDRESS='localhost'
+QUEUE_NAME='plants'
 MESSAGE_BODY=''
 
 # Rabbit connection
@@ -25,7 +25,7 @@ def create_app(test_config=None):
     def create_plant():
         body = request.get_json()
         if body is None:
-            return(jsonify({message: abort 422}))
+            return(jsonify({'message': 'abort 422'}))
         else:
             new_name = body.get('name', None)
             new_primary_color = body.get('primary_color', None)
