@@ -21,4 +21,4 @@ Creating a message
 
 ``curl -X POST -H "Content-Type":"application/json" localhost:5000/api/plants -d '{"name":"rose", "primary_color": "red"}'``
 
-[!demo-rabbit-python-consumer](/images/demo-rabbit-python.png)
+![demo-rabbit-python-consumer](/images/demo-rabbit-python.png)
