@@ -19,4 +19,4 @@ bin path: ``/opt/rabbitmq/sbin/rabbitmqctl``
 
 Creating a message
 
-``curl -X POST -H "Content-Type":"application/json" localho000/api/plants -d '{"name":"rose", "primary_color": "red"}'``
+``curl -X POST -H "Content-Type":"application/json" localhost:5000/api/plants -d '{"name":"rose", "primary_color": "red"}'``
