@@ -7,6 +7,8 @@ Check queues RabbitMQ has and how many messages are in them:
 
 ``sudo rabbitmqctl list_queues``
 
+bin path: ``/opt/rabbitmq/sbin/rabbitmqctl``
+
 ## Setup
 
 ### RabbitMQ
