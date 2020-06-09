@@ -1,6 +1,12 @@
 # pyabbit
 RabbitMQ + Python project
 
+## Basics
+
+Check queues RabbitMQ has and how many messages are in them:
+
+``sudo rabbitmqctl list_queues``
+
 ## Setup
 
 ### RabbitMQ
