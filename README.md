@@ -15,8 +15,10 @@ bin path: ``/opt/rabbitmq/sbin/rabbitmqctl``
 
 ``docker run -d --hostname rabbit --name rabbit -p 5672:5672 rabbitmq:3``
 
-### Testing
+### Testing the consumer
 
 Creating a message
 
 ``curl -X POST -H "Content-Type":"application/json" localhost:5000/api/plants -d '{"name":"rose", "primary_color": "red"}'``
+
+[!demo-rabbit-python-consumer](/images/demo-rabbit-python.png)
